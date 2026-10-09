@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / Twitter</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="page">
+
+      
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <a href="#" class="logo" aria-label="Twitter home">
+                    <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                        <path d="M18 17L28.4 31.3L18.1 47H24.1L31.2 37.2L38.5 47H46.7L35.6 31.4L45.6 17H39.8L32.5 26.7L25.2 17H18ZM31.7 29L34.2 32.3L42.3 43H38.9L31.8 33.6L24.6 43H21.2L29.4 32.2L27 29L19 17H22.4L30.4 26.6L37.9 17H41.2L33.3 28.4L31.7 29Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                        <li><a href="#" class="nav-item" id="exploreTab"><i class="fa-solid fa-magnifying-glass"></i><span>Explore</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-regular fa-bell"></i><span>Notifications</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-regular fa-envelope"></i><span>Messages</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-regular fa-bookmark"></i><span>Bookmarks</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-solid fa-list"></i><span>Lists</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-regular fa-user"></i><span>Profile</span></a></li>
+                        <li><a href="#" class="nav-item"><i class="fa-solid fa-ellipsis"></i><span>More</span></a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="tweet-btn">Tweet</button>
+            </div>
+            <div class="profile-box">
+                <img src="assets/Profile1.png" alt="profile">
+                <div class="profile-names">
+                    <div class="name">Nizaam Jeftha</div>
+                    <div class="handle">@NJDEV</div>
+                </div>
+                <i class="fa-solid fa-ellipsis more-icon"></i>
+            </div>
+        </aside>
+
+      
+        <main class="feed">
+            <header class="feed-header">
+                <h1>Home</h1>
+                <div class="header-right">
+                    <button type="button" id="themeBtn" class="theme-btn">Light mode</button>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </header>
+
+            <section class="tweet-box">
+                <img src="assets/Profile1.png" alt="my profile">
+                <div class="tweet-input-area">
+                    <textarea rows="2" placeholder="What's happening?"></textarea>
+                    <div class="tweet-actions">
+                        <div class="tweet-icons">
+                            <i class="fa-regular fa-image"></i>
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <i class="fa-regular fa-face-smile"></i>
+                            <i class="fa-regular fa-calendar"></i>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <button type="button" class="tweet-submit">Tweet</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="show-tweets">Show 32 Tweets</div>
+
+            <article class="tweet">
+                <div class="tweet-avatar">
+                    <img src="/assets/Profile2.png" alt="Zaio">
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-top">
+                        <span class="tweet-name">Emily</span>
+                        <span class="tweet-handle">@Emilys</span>
+                        <span class="tweet-time">· 20m</span>
+                    </div>
+                    <p class="tweet-text">
+                        Welcome to FakeTwitter HQ 🎉 Building something that looks real enough that people try to click Tweet. 
+                    </p>
+                    <div class="tweet-stats">
+                        <span><i class="fa-regular fa-comment"></i> 42</span>
+                        <span><i class="fa-solid fa-retweet"></i> 18</span>
+                        <span class="liked"><i class="fa-solid fa-heart"></i> <span class="liked-count">256</span></span>
+                        <span><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tweet">
+                <div class="tweet-avatar">
+                    <img src="/assets/Profile3.png" alt="Coder">
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-top">
+                        <span class="tweet-name">Coder Group</span>
+                        <span class="tweet-handle">@CoderGroup</span>
+                        <span class="tweet-time">· 6h</span>
+                    </div>
+                    <p class="tweet-text">
+                        Programming feels slow at first. Then one day the pieces connect and you wonder why you ever doubted yourself. Keep pushing.
+                    </p>
+                    <div class="tweet-image">
+                        <img src="assets/ocean.png" alt="coding setup">
+                    </div>
+                    <div class="tweet-stats">
+                        <span><i class="fa-regular fa-comment"></i> 89</span>
+                        <span><i class="fa-solid fa-retweet"></i> 120</span>
+                        <span><i class="fa-regular fa-heart"></i> 1.2k</span>
+                        <span><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tweet">
+                <div class="tweet-avatar">
+                    <img src="assets/Profile4.png" alt="Jamie">
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-top">
+                        <span class="tweet-name">MotivateMe</span>
+                        <span class="tweet-handle">@Jamie</span>
+                        <span class="tweet-time">· 17h</span>
+                    </div>
+                    <p class="tweet-text">
+                        <span class="tag">#CodeMotivation</span> <span class="tag">#LearnEveryday</span><br><br>
+                        Clean code always looks like it was written by someone who cares. — Robert C. Martin
+                    </p>
+                    <div class="tweet-stats">
+                        <span><i class="fa-regular fa-comment"></i> 34</span>
+                        <span><i class="fa-solid fa-retweet"></i> 67</span>
+                        <span><i class="fa-regular fa-heart"></i> 540</span>
+                        <span><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tweet">
+                <div class="tweet-avatar">
+                    <img src="assets/Profile6.png" alt="Hackathon">
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-top">
+                        <span class="tweet-name">Hackathon</span>
+                        <span class="tweet-handle">@Coding</span>
+                        <span class="tweet-time">· 10h</span>
+                    </div>
+                    <p class="tweet-text">
+                        <span class="tag">#Hackathon</span> <span class="tag">#WinPrizes</span><br><br>
+                        Our hackathon runs 20–30 Nov. DM your details if you want in. See you there!
+                    </p>
+                    <div class="tweet-stats">
+                        <span><i class="fa-regular fa-comment"></i> 56</span>
+                        <span><i class="fa-solid fa-retweet"></i> 91</span>
+                        <span><i class="fa-regular fa-heart"></i> 780</span>
+                        <span><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tweet">
+                <div class="tweet-avatar">
+                    <img src="assets/Profile7.png" alt="Sam">
+                </div>
+                <div class="tweet-content">
+                    <div class="tweet-top">
+                        <span class="tweet-name">Ninja Dev</span>
+                        <span class="tweet-handle">@SamLee</span>
+                        <span class="tweet-time">· 1d</span>
+                    </div>
+                    <p class="tweet-text">
+                        Interns are touring every department this week. Love seeing fresh eyes on our workflow @HeliosTowers
+                    </p>
+                    <div class="tweet-stats">
+                        <span><i class="fa-regular fa-comment"></i> 12</span>
+                        <span><i class="fa-solid fa-retweet"></i> 5</span>
+                        <span><i class="fa-regular fa-heart"></i> 98</span>
+                        <span><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+      
+        <aside class="right-sidebar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Twitter">
+            </div>
+
+            <div id="explorePanel" class="explore-panel" aria-live="polite">
+                <div class="explore-header">
+                    <div>
+                        <p class="explore-label">Trending now</p>
+                        <h3>Explore</h3>
+                    </div>
+                    <button type="button" class="explore-refresh"><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+
+                <div class="explore-topics">
+                    <button type="button" class="topic active">For you</button>
+                    <button type="button" class="topic">Design</button>
+                    <button type="button" class="topic">Tech</button>
+                    <button type="button" class="topic">Culture</button>
+                </div>
+
+                <div class="explore-card highlight">
+                    <p class="card-tag">Live event</p>
+                    <h4>AI Product Hunt</h4>
+                    <p>Creators are shipping faster with smarter workflows and cleaner UX.</p>
+                </div>
+
+                <div class="explore-card">
+                    <p class="card-tag">Popular</p>
+                    <h4>#BuildInPublic</h4>
+                    <p>12.4K people are sharing shipping updates, feedback loops, and wins.</p>
+                </div>
+
+                <div class="explore-card">
+                    <p class="card-tag">Featured</p>
+                    <h4>Design systems</h4>
+                    <p>Micro-interactions and strong visual rhythm are driving the most attention.</p>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="widget-header">Trends for you</div>
+                <div class="trend-item">
+                    <div class="trend-meta">Trending in South Africa</div>
+                    <div class="trend-name">Zaio</div>
+                    <div class="trend-count">4,313 Tweets</div>
+                </div>
+                <div class="trend-item">
+                    <div class="trend-meta">Trending in South Africa</div>
+                    <div class="trend-name">#Frontend</div>
+                    <div class="trend-count">1,589 Tweets</div>
+                </div>
+                <div class="trend-item">
+                    <div class="trend-meta">Trending in South Africa</div>
+                    <div class="trend-name">Makhadzi</div>
+                    <div class="trend-count">204K Tweets</div>
+                </div>
+                <div class="trend-item">
+                    <div class="trend-meta">Trending</div>
+                    <div class="trend-name">#CodeEveryday</div>
+                    <div class="trend-count">3,110 Tweets</div>
+                </div>
+                <div class="show-more">Show more</div>
+            </div>
+
+            <div class="widget">
+                <div class="widget-header">Who to follow</div>
+                <div class="follow-item">
+                    <img src="assets/Profile8.png" alt="Samuel">
+                    <div class="follow-info">
+                        <div class="name">Samuel Eck</div>
+                        <div class="handle">@SamuelEck</div>
+                    </div>
+                    <button type="button" class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-item">
+                    <img src="assets/Profile9.png" alt="Nikita">
+                    <div class="follow-info">
+                        <div class="name">Nikita Moore</div>
+                        <div class="handle">@NikitaM</div>
+                    </div>
+                    <button type="button" class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-item">
+                    <img src="assets/Profile10.png" alt="Rosina">
+                    <div class="follow-info">
+                        <div class="name">Rosina Mellow</div>
+                        <div class="handle">@RosinaM</div>
+                    </div>
+                    <button type="button" class="follow-btn">Follow</button>
+                </div>
+                <div class="show-more">Show more</div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Ads info</a>
+                <a href="#">More ...</a>
+            </div>
+            <p class="footer-copy">© 2026 Twitter, Inc.</p>
+        </aside>
+
+    </div>
+
+   <!-- Mobile -->
+    <nav class="mobile-nav">
+        <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-regular fa-bell"></i></a>
+        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+    <button type="button" class="mobile-tweet-fab" aria-label="Tweet"><i class="fa-solid fa-feather"></i></button>
+
+    <div id="tweetModal" class="tweet-modal" aria-hidden="true">
+        <div class="tweet-modal-backdrop" data-close="true"></div>
+        <div class="tweet-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="tweetModalTitle">
+            <div class="tweet-modal-header">
+                <button type="button" class="close-modal" aria-label="Close tweet composer"><i class="fa-solid fa-xmark"></i></button>
+                <h3 id="tweetModalTitle">Compose Tweet</h3>
+            </div>
+
+            <div class="tweet-modal-body">
+                <img src="assets/Profile1.png" alt="my profile" class="modal-profile-pic">
+                <div class="modal-editor">
+                    <textarea id="modalTweetInput" maxlength="280" placeholder="What's happening?"></textarea>
+                    <div class="modal-helpers">
+                        <span><i class="fa-regular fa-image"></i></span>
+                        <span><i class="fa-solid fa-chart-simple"></i></span>
+                        <span><i class="fa-regular fa-face-smile"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweet-modal-footer">
+                <span id="tweetCharCount" class="tweet-char-count">280</span>
+                <button type="button" id="modalTweetBtn" class="tweet-submit modal-submit" disabled>Tweet</button>
+            </div>
+        </div>
+    </div>
+
+ 
+   
+       <script src="script.js"></script>
+ 
+
+</body>
+</html>
