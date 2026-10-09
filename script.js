@@ -1,6 +1,9 @@
 //  Light and Dark Mode
  var btn = document.getElementById("themeBtn");
 
+        document.body.classList.add("light-mode");
+        btn.innerText = "Dark mode";
+
         btn.onclick = function () {
             var body = document.body;
 
